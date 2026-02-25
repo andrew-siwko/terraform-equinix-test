@@ -9,7 +9,7 @@ This experiment uses Terraform to create a single virtual machine on [Equinix' M
 * 01-variables.auto.tfvars, 01-variables.tf
   * The two variable files contain parameters factored out of the main code and their definitions.  As the configuration code matured and I added more cloud providers, it became clear that certain parameters could be pulled up for ease of use.
 * 02-providers.tf
-  * This file contains the top level terraform{} block which contains required providers, by necessity, the backend definition and connects providers to required variables.  i would have liked to split the backend into a separate file but there may only be one terraform{} block and the rest of the world uses providers.  In these projects I have stored the tfstate file on the cloud provider rather than defining local storage.  I found this proceess to be difficult and educational.
+  * This file contains the top level terraform{} block which contains required providers, by necessity, the backend definition and connects providers to required variables.  I would have liked to split the backend into a separate file but there may only be one terraform{} block and the rest of the world uses providers.  In these projects I have stored the tfstate file on the cloud provider rather than defining local storage.  I found this proceess to be difficult and educational.
 * 03-data.tf
   * This file contains data statements to query the cloud provider for images and instance types.  The results are stored in local variables and used to create the VM instance.  This file arose from the early struggles I had with finding available resources with compatible type, image and location.
 * 04-network.tf
@@ -34,7 +34,7 @@ I tried to build the same basic structures in each of the cloud environments.  E
 * Step 3 - [GCP](https://github.com/andrew-siwko/terraform-gcp-test)
 * Step 4 - [Linode](https://github.com/andrew-siwko/terraform-linode-test)
 * Step 5 - [IBM](https://github.com/andrew-siwko/terraform-ibm-test)
-* Step 6 - [Oracle OCI](https://github.com/andrew-siwko/terraform-oracle-test) 
+* Step 6 - [Oracle OCI](https://github.com/andrew-siwko/terraform-oracle-test)
 * Step 7 - [Digital Ocean](https://github.com/andrew-siwko/terraform-digital-ocean-test)
 * Step 8 - [Equinix](https://github.com/andrew-siwko/terraform-equinix-test) (you are here)
 
