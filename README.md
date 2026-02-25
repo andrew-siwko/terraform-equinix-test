@@ -1,5 +1,5 @@
 # terraform-equinix-test - pending
-Equinix is a data center company with a rock-solid global operational platform.  You may know them for colocation services and a global networking fabric in equinties market locations but they also offer hosting.  Equinix has a terraform interface which can be used to manage infrastructure provisioning.
+Equinix is a data center company with a rock-solid global operational platform.  You may know them for colocation services and a global networking fabric in equities market locations but they also offer hosting.  Equinix has a terraform interface which can be used to manage infrastructure provisioning.
 
 # Andrew's Multicloud Terraform Experiment
 ## Overview
